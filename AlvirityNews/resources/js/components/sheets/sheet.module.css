@@ -1,0 +1,85 @@
+.flexcontainer{
+   display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around;
+    max-width: 1500px;
+    transition: all 0.3s linear;
+}
+
+h1{
+    text-align: center;
+}
+
+.maincblock{
+    display: flex ;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.51);
+    border-radius: 30px;
+    font-size: 13px ;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    flex-basis: 40%;
+    transition: all 0.3s linear;
+
+}
+
+.Mbutton{
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  background-color: black;
+  color:aliceblue;
+}
+
+
+.current_button{
+    background-color: aliceblue;
+    color: black;
+}
+.containeralign{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.customP{
+    padding: 10px;
+}
+
+
+.customN{
+    position: relative;
+    color:rgba(255, 249, 249, 0.5);
+    transition: color 0.3s linear;
+}
+
+.customN:hover{
+   
+    color:white;
+    
+}
+
+.customN:hover::before{
+   
+    border-top: 1px solid white !important;
+    border-right: 1px solid white !important;
+    
+}
+.customN::before{
+  content: '';
+  width: 10px;
+
+  height: 10px;
+
+  border-top: 1px solid rgba(255, 249, 249, 0.5) !important;
+
+  border-right: 1px solid rgba(255, 249, 249, 0.5) !important;
+
+  margin: 16px 0 0 10px;
+
+  display: inline-block;
+  transform: rotate(-135deg);
+  transition: all 0.3s linear;
+}
